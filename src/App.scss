@@ -1,0 +1,301 @@
+
+
+$color-4: #68adad;
+$color-3: #68c3ad;
+$color-2: #68cead;
+$color-1: #68d9ad;
+$color-5: #688cad;
+
+html, body, div, span,h1, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body { 
+    background: #eee;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 62.5%;
+    line-height: 1;
+    color: #585858;
+    padding: 22px 10px;
+    padding-bottom: 55px;
+  }
+  
+  textarea { 
+    box-sizing: border-box;
+    outline: none; 
+  }
+  
+  
+  table { 
+      border-collapse: collapse; 
+      border-spacing: 0; 
+  }
+  
+  h1 { 
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 3.6em;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .wrapper {
+      display: flex;
+      align-items: flex-start;
+      .nav {
+          width: 250px;
+          background: #fff;
+          padding: 10px 17px;
+          box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+          margin-right: 5px;
+  
+          form {
+              font-family: "Roboto", sans-serif;
+              outline: 0;
+              // background: #f2f2f2;
+              width: 100%;
+              border: 0;
+              margin: 0 0 15px;
+              // padding: 15px;
+              box-sizing: border-box;
+              font-size: 14px;
+              text-align: left;
+              p {
+                  margin-bottom: 10px;
+              }
+  
+              input {
+                  font-family: "Roboto", sans-serif;
+                  outline: 0;
+                  background: #f2f2f2;
+                  // width: 100%;
+                  border: 0;
+                  margin: 0 0 15px;
+                  padding: 5px 15px;
+                  box-sizing: border-box;
+                  font-size: 14px;
+                }
+  
+              button {
+                  font-family: "Roboto", sans-serif;
+                  text-transform: uppercase;
+                  outline: 0;
+                  background: #29a2ff;
+                  margin-top: 5px;
+      
+                  border: 0;
+                  padding: 5px 10px;
+                  color: #FFFFFF;
+                  font-size: 14px;
+                  transition: all 0.3 ease;
+                  cursor: pointer;
+                }
+          }
+  
+          .pagination {
+              display: flex;
+              justify-content: center;
+              .left, .right, .row-elem {
+                  background-color: #a7d5f8;
+                  width: 20px;
+                  height: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 14px;
+                  &:hover {
+                      color: #29a2ff;
+                      font-size: 16px
+                  }
+              }
+  
+              .box {
+                  width: 140px;
+                  overflow: hidden;
+                  position: relative;
+                  background-color: #a7d5f8
+              }
+              .row {
+                  position: absolute;
+                  display: flex;
+                  .active {
+                      font-size: 16px;
+                      color: white;
+                  }
+              }
+          }
+  
+      }
+  
+      .loader{
+          width: 400px;
+          height: 250px;
+          background: #fff;
+          padding: 10px 17px;
+          box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+          margin: 5px;
+          position: relative;
+          h1 {
+              font-size: 26px
+          }
+          button {
+              font-family: "Roboto", sans-serif;
+              text-transform: uppercase;
+              outline: 0;
+              background: #29a2ff;
+              margin: 5px;
+  
+              border: 0;
+              padding: 5px 10px;
+              color: #FFFFFF;
+              font-size: 14px;
+              transition: all 0.3 ease;
+              cursor: pointer;
+          }
+      }
+  }
+  
+  
+  
+  .list {
+  //   width: 850px;
+    background: #fff;
+    padding: 10px 17px;
+    box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+  }
+  
+  .main-table {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .stnd:nth-of-type(even) {
+      background-color: #a7d5f8
+  }
+  
+  .stnd:hover {
+      background-color: #e7f0c9;
+      cursor: pointer;
+  }
+  
+  .main-table thead {
+    cursor: pointer;
+    background: #29a2ff;
+    color: white
+  }
+  .main-table thead tr th { 
+    font-weight: bold;
+    padding: 12px 30px;
+    padding-left: 42px;
+  }
+  .main-table thead tr th span { 
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+  
+  
+  
+  .main-table tbody tr { 
+    color: #555;
+  }
+   tr td {
+    text-align: center;
+    padding: 7px 10px;
+  }
+  
+  .description {
+      width: 100%;
+      height: 200px;
+      // background-color: rgba(255, 166, 0, 0.296);
+      p {
+          margin: 5px;
+      }
+      td {
+  
+          text-align: left ;
+          textarea {
+              width: 260px;
+              height: 70px;
+          }
+          img {
+              width: 150px;
+              height: 150px;
+          }
+      }
+  }
+  .close {
+      
+      button {
+          border: 0;
+          padding: 5px 10px;
+          color: #FFFFFF;
+          font-size: 14px;
+          transition: all 0.3 ease;
+          cursor: pointer;
+          background: #29a2ff;
+  
+      }
+  }
+
+
+  $color: $color-1, $color-2, $color-3, $color-4, $color-5;
+
+  @mixin anim() {
+    @keyframes scale {
+      0% {
+          transform: scale(1);
+      }
+      50%,
+      75% {
+        transform: scale(2.5);
+      }
+      78%, 100% {
+        opacity: 0;
+      }
+    }
+  }
+  
+ 
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    animation-delay: 1s;
+  }
+  
+  @for $i from 1 through 5 {
+    .item-#{$i} {
+      width: 20px;
+      height: 20px;
+      background: #f583a1;
+      border-radius: 50%;
+      @include anim();
+      background-color: nth($color, $i);
+      margin: 7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: nth($color, $i);
+        opacity: 0.7;
+        animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+        animation-delay: 200ms * $i;
+        transition: 0.5s all ease;
+        transform: scale(1);
+      }
+    }
+  }
